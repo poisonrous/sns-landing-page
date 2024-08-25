@@ -1,0 +1,198 @@
+* {
+  font-size: 10px;
+  color: #483C32;
+}
+
+body {
+  background-color: AliceBlue;
+  margin: 0;
+}
+
+
+#header-img {
+  width: 200px;
+}
+
+#header {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: rgba(95, 158, 160, 0.9);
+}
+
+#nav-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  background-color: rgba(95, 158, 160, 0.9);
+}
+
+a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#home {
+  display: grid;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+}
+
+#reviews {
+  width: 80%;
+}
+
+.review {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 600px;
+}
+
+blockquote:last-of-type {
+  margin-bottom: 0;
+}
+
+.review-number {
+  display: flex;
+  width: 80px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  width: 100%;
+  font-size: 6rem;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.quote {
+  font-size: 1.9rem;
+  font-family: Courier, sans-serif;
+}
+
+.author {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+blockquote {
+  width: 90%;
+}
+
+hr {
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+form, #tracklist, #reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#email {
+  font-size: 1.6rem;
+  margin-top: -15px;
+  margin-bottom: 12px;
+}
+
+#submit {
+  width: 120px;
+  height: 30px;
+  font-size: 1.5rem;
+  background-color: #483C32;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#buy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 50px;
+}
+
+.version {
+  background-color: rgba(95, 158, 160, 0.7);
+  padding-bottom: 30px;
+}
+
+.version-img {
+  width: 250px;
+  margin: 30px;
+}
+
+h3{
+  font-size: 2.3rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+button {
+  font-size: 2rem;
+  color: white;
+  background-color: #483C32;
+  cursor: pointer;
+}
+
+#footer {
+  font-size: 1.5rem;
+  background-color: rgba(95, 158, 160, 0.4);
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: right;
+}
+
+@media(max-width: 480px) {
+  #buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .version {
+    background-color: rgba(95, 158, 160, 0.7);
+    padding-bottom: 10px;
+  }
+
+  .version-img {
+    width: 250px;
+    margin: 20px 20px -10px 20px
+  }
+
+  .price {
+    margin: -20px 0 5px 0;
+  }
+
+  video {
+    width: 400px;
+  }
+
+}
